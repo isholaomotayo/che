@@ -55,9 +55,9 @@ public class OpenShiftConnectorTest {
     @Mock
     private CreateContainerParams              createContainerParams;
     @Mock
-    private OpenShiftPvcHelper                 openShiftPvcHelper;
-    @Mock 
     private EventService                       eventService;
+    @Mock
+    private OpenShiftPvcHelper                 openShiftPvcHelper;
 
     private OpenShiftConnector                 openShiftConnector;
 
@@ -75,8 +75,8 @@ public class OpenShiftConnectorTest {
                                                     dockerConnectionFactory,
                                                     authManager,
                                                     dockerApiVersionPathPrefixProvider,
-                                                    openShiftPvcHelper,
                                                     eventService,
+                                                    openShiftPvcHelper,
                                                     CHE_DEFAULT_SERVER_EXTERNAL_ADDRESS,
                                                     CHE_DEFAULT_OPENSHIFT_PROJECT_NAME,
                                                     OPENSHIFT_LIVENESS_PROBE_DELAY,
